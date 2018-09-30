@@ -1,0 +1,19 @@
+{
+  "name": "ceshiMysql",
+  "version": "0.1.0",
+  "description": "ceshi mysql",
+  "private": true,
+  "main": "./index.js",
+  "bin": {
+    "run": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ioredis": "^3.2.2",
+    "mysql": "^2.16.0",
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
