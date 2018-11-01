@@ -10,7 +10,7 @@ const { connection } = require('../lib/mysql');
 // const waitFor = time => new Promise((resolve) => { setTimeout(resolve(), timeout) });
 
 exports.getBid = (req, res) => {
-  const sql = 'select aid,v_url from qs_video_info where platform=47 and v_url not like \'%&utm_medium=%\' and v_url not like \'%https://www.amemv.com/share/video%\' limit 0, 1000';
+  const sql = 'select aid,v_url from qs_video_info where platform=47 and v_url not like \'%&utm_medium=%\' and v_url not like \'%https://www.amemv.com/share/video%\' limit 0, 10000';
   connection.query(sql, (err, result) => {
     if (err) {
       console.log(err.message);

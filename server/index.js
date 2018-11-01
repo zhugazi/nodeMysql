@@ -2,12 +2,13 @@ const HTTP = require('http');
 const { connection } = require('../lib/mysql');
 const { getMid } = require('./sqlDate');
 const { getBid } = require('../oneTask/douyinUrl');
+const { getAid } = require('../oneTask/miaopai');
 
 
 const server = HTTP.createServer((req, res) => {
   if (req.method === 'GET') {
     // getMid(req, res, connection);
-    getBid(req, res);
+    getAid(req, res);
   }
 });
 
